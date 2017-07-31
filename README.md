@@ -1,7 +1,7 @@
-publysher/hugo
+kuipumu/hugo
 ==============
 
-`publysher/hugo` is a [Docker](https://www.docker.io) base image for static sites generated with [Hugo](http://gohugo.io). 
+`kuipumu/hugo` is a [Docker](https://www.docker.io) base image for static sites generated with [Hugo](http://gohugo.io). 
 
 Images derived from this image can either run as a stand-alone server, or function as a volume image for your web server. 
 
@@ -58,9 +58,3 @@ The image is also suitable for use as a volume image for a web server, such as [
 
 	docker run -d -v /usr/share/nginx/html --name site-data my/image
 	docker run -d --volumes-from site-data --name site-server -p 80:80 nginx
-
-
-Examples
---------
-
-For an example of a Hugo site, have a look at https://github.com/publysher/blog.publysher.nl
